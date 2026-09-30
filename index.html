@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>মোল্লাপাড়া অটো ইজি বাইক সমিতি</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans Bengali","SolaimanLipi",Arial,sans-serif;background:#f5f7f8;color:#17352a;line-height:1.7}
+header{background:linear-gradient(135deg,#087443,#0e9b5b);color:white;padding:28px 16px;text-align:center}
+header h1{font-size:clamp(25px,6vw,42px);margin-bottom:5px}
+header p{font-size:17px}
+nav{position:sticky;top:0;background:#064d2d;z-index:5;display:flex;justify-content:center;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;padding:10px 14px;font-weight:700}
+nav a:hover{background:#0b7546}
+.hero{max-width:1100px;margin:22px auto;padding:40px 20px;text-align:center;background:white;border-radius:18px;box-shadow:0 5px 22px #00000012}
+.hero .icon{font-size:70px}
+.hero h2{font-size:30px;color:#087443}
+.hero p{max-width:750px;margin:8px auto 18px}
+.btn{display:inline-block;background:#087443;color:#fff;padding:10px 20px;border-radius:25px;text-decoration:none;font-weight:bold}
+section{max-width:1100px;margin:22px auto;padding:0 16px}
+.title{text-align:center;font-size:28px;color:#087443;margin-bottom:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card{background:white;padding:20px;border-radius:15px;box-shadow:0 4px 18px #0000000d}
+.card h3{color:#087443;margin-bottom:5px}
+.table-wrap{overflow-x:auto;background:white;border-radius:15px;box-shadow:0 4px 18px #0000000d}
+table{width:100%;border-collapse:collapse;min-width:650px}
+th,td{padding:10px;border-bottom:1px solid #e3ebe7;text-align:left}
+th{background:#087443;color:white}
+.notice{border-left:5px solid #087443;background:white;padding:17px 20px;border-radius:10px;box-shadow:0 4px 18px #0000000d}
+footer{margin-top:35px;background:#063d25;color:white;text-align:center;padding:25px 15px}
+.small{font-size:14px;opacity:.9}
+
+.member-search{
+  background:white;
+  padding:18px;
+  margin-bottom:15px;
+  border-radius:15px;
+  box-shadow:0 4px 18px #0000000d;
+}
+.member-search label{
+  display:block;
+  font-weight:700;
+  color:#087443;
+  margin-bottom:8px;
+}
+.member-search input{
+  width:100%;
+  padding:13px 15px;
+  border:2px solid #b8d9c8;
+  border-radius:10px;
+  font-size:17px;
+  outline:none;
+}
+.member-search input:focus{border-color:#087443}
+.search-result{
+  margin-top:8px;
+  font-size:14px;
+  color:#555;
+}
+.no-result{
+  display:none;
+  padding:15px;
+  text-align:center;
+  color:#a33;
+  font-weight:700;
+  background:#fff7f7;
+  border-radius:10px;
+  margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>মোল্লাপাড়া অটো ইজি বাইক সমিতি</h1>
+  <p>ঐক্য • নিরাপত্তা • সমৃদ্ধি</p>
+</header>
+
+<nav>
+  <a href="#home">হোম</a>
+  <a href="#about">পরিচিতি</a>
+  <a href="#committee">কার্যকারী কমিটি</a>
+  <a href="#members">সদস্য তালিকা</a>
+  <a href="#notice">নোটিশ</a>
+  <a href="#contact">যোগাযোগ</a>
+</nav>
+
+<div id="home" class="hero">
+  <div class="icon">🛺</div>
+  <h2>স্বাগতম</h2>
+  <p>মোল্লাপাড়া অটো ইজি বাইক সমিতির অফিসিয়াল ওয়েবসাইটে আপনাকে স্বাগতম। সমিতির সদস্যদের তথ্য, কমিটি, নোটিশ ও যোগাযোগের তথ্য এখানে পাওয়া যাবে।</p>
+  <a class="btn" href="#members">সদস্য তালিকা দেখুন</a>
+</div>
+
+<section id="about">
+  <h2 class="title">সমিতির পরিচিতি</h2>
+  <div class="cards">
+    <div class="card"><h3>নাম</h3><p>মোল্লাপাড়া অটো ইজি বাইক সমিতি</p></div>
+    <div class="card"><h3>ঠিকানা</h3><p>মোল্লাপাড়া বাজার, সাতবাড়িয়া, পুঠিয়া, রাজশাহী</p></div>
+    <div class="card"><h3>উদ্দেশ্য</h3><p>সদস্যদের ঐক্য, নিরাপত্তা ও পারস্পরিক সহযোগিতা বৃদ্ধি করা।</p></div>
+  </div>
+</section>
+
+<section id="committee">
+  <h2 class="title">কার্যকারী কমিটির সদস্যদের নাম ও পদবী</h2>
+
+  <div class="member-search">
+    <label for="memberSearch">🔎 সদস্যের নাম, ইংরেজি নাম বা মোবাইল নম্বর দিয়ে খুঁজুন</label>
+    <input id="memberSearch" type="search"
+      placeholder="যেমন: মোঃ হারুনুর রশিদ / Harunur Rashid / 01734"
+      autocomplete="off">
+    <div id="searchResult" class="search-result">সব ৩৪ জন সদস্য দেখানো হচ্ছে</div>
+    <div id="noResult" class="no-result">কোনো সদস্যের তথ্য পাওয়া যায়নি।</div>
+  </div>
+  <div class="table-wrap">
+  <table>
+    <tr><th>পদবী</th><th>নাম</th></tr>
+    <tr><td>প্রধান উপদেষ্টা</td><td>মোঃ শফিকুল ইসলাম</td></tr>
+    <tr><td>প্রধান উপদেষ্টা</td><td>মোঃ সাদেক ইসলাম</td></tr>
+    <tr><td>প্রধান উপদেষ্টা</td><td>মোঃ আনোয়ার হোসেন</td></tr>
+    <tr><td>সভাপতি</td><td>মোঃ হারুনুর রশিদ</td></tr>
+    <tr><td>সহ-সভাপতি</td><td>মোঃ তাইজুল ইসলাম</td></tr>
+    <tr><td>সাধারণ সম্পাদক</td><td>মোঃ রহিদুল ইসলাম</td></tr>
+    <tr><td>সহ-সাধারণ সম্পাদক</td><td>শ্রী উজ্জল কুমার</td></tr>
+    <tr><td>কোষাধক্ষ</td><td>মোহাম্মদ আজিজুল হক</td></tr>
+    <tr><td>প্রচার সম্পাদক</td><td>মোঃ সুজন আলী</td></tr>
+  </table>
+  </div>
+</section>
+
+<section id="members">
+  <h2 class="title">সদস্যদের নামের তালিকা ও মোবাইল নম্বর</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>ক্রম</th><th>সদস্যের নাম</th><th>ঠিকানা</th><th>মোবাইল নম্বর</th></tr>
+    <tr data-search="মোঃ হারুনুর রশিদ খামারমাড়িয়া ০১৭৩৪-৮০৭৩৭৬ harunur rashid ০১"><td>০১</td><td>মোঃ হারুনুর রশিদ</td><td>খামারমাড়িয়া</td><td>০১৭৩৪-৮০৭৩৭৬</td></tr>
+<tr data-search="মোঃ আজিজুল হক সাতবাড়িয়া ০১৩০০-১৯১১০২ azizul haque ০২"><td>০২</td><td>মোঃ আজিজুল হক</td><td>সাতবাড়িয়া</td><td>০১৩০০-১৯১১০২</td></tr>
+<tr data-search="মোঃ তাইজুল ইসলাম কোওড়াজোওড়া ০১৯৮৫-৫৩১৯১০ taizul islam ০৩"><td>০৩</td><td>মোঃ তাইজুল ইসলাম</td><td>কোওড়াজোওড়া</td><td>০১৯৮৫-৫৩১৯১০</td></tr>
+<tr data-search="মোঃ শফিকুল ইসলাম কোওড়াজোওড়া ০১৭৭০-২৮৮৮৯৬ shafikul islam ০৪"><td>০৪</td><td>মোঃ শফিকুল ইসলাম</td><td>কোওড়াজোওড়া</td><td>০১৭৭০-২৮৮৮৯৬</td></tr>
+<tr data-search="মোঃ সুজন কোওড়াজোওড়া ০১৭৯৫-২২৭৪৪৮ sujon ০৫"><td>০৫</td><td>মোঃ সুজন</td><td>কোওড়াজোওড়া</td><td>০১৭৯৫-২২৭৪৪৮</td></tr>
+<tr data-search="মোঃ সাদেকুল ইসলাম সুবর্ণপাড়া ০১৩২২-৩২০৬৪৪ sadekul islam ০৬"><td>০৬</td><td>মোঃ সাদেকুল ইসলাম</td><td>সুবর্ণপাড়া</td><td>০১৩২২-৩২০৬৪৪</td></tr>
+<tr data-search="শ্রী উজ্জল ছাতারপাড়া ০১৭৪৪-৭৩২২৪২ ujjal ০৭"><td>০৭</td><td>শ্রী উজ্জল</td><td>ছাতারপাড়া</td><td>০১৭৪৪-৭৩২২৪২</td></tr>
+<tr data-search="মোঃ আকরাম ছাতারপাড়া ০১৭৬৫-০৪১২৪৭ akram ০৮"><td>০৮</td><td>মোঃ আকরাম</td><td>ছাতারপাড়া</td><td>০১৭৬৫-০৪১২৪৭</td></tr>
+<tr data-search="শ্রী অনিল ঘোষ সাতবাড়িয়া ০১৭৭৩-২৮৮৪৮৮ anil ghosh ০৯"><td>০৯</td><td>শ্রী অনিল ঘোষ</td><td>সাতবাড়িয়া</td><td>০১৭৭৩-২৮৮৪৮৮</td></tr>
+<tr data-search="মোঃ রহিদুল ইসলাম সাতবাড়িয়া ০১৮৪৩-২৬৩২৪৪ rohidul islam ১০"><td>১০</td><td>মোঃ রহিদুল ইসলাম</td><td>সাতবাড়িয়া</td><td>০১৮৪৩-২৬৩২৪৪</td></tr>
+<tr data-search="মোঃ সোহেল রানা সাতবাড়িয়া ০১৭৮৬-৬৫২৩৩৫ sohel rana ১১"><td>১১</td><td>মোঃ সোহেল রানা</td><td>সাতবাড়িয়া</td><td>০১৭৮৬-৬৫২৩৩৫</td></tr>
+<tr data-search="মোঃ ওয়াদুদ মোল্লাপাড়া ০১৭৬৮-৯৩৫৫৮৬ wadud ১২"><td>১২</td><td>মোঃ ওয়াদুদ</td><td>মোল্লাপাড়া</td><td>০১৭৬৮-৯৩৫৫৮৬</td></tr>
+<tr data-search="মোঃ মনিরুল (লালু) খোকসা ০১৭৯৮-৯৬১০৭৮ monirul lalu ১৩"><td>১৩</td><td>মোঃ মনিরুল (লালু)</td><td>খোকসা</td><td>০১৭৯৮-৯৬১০৭৮</td></tr>
+<tr data-search="মোঃ টুটুল কোওড়াজোওড়া ০১৮৪৯-৩৬১৪১৭ tutul ১৪"><td>১৪</td><td>মোঃ টুটুল</td><td>কোওড়াজোওড়া</td><td>০১৮৪৯-৩৬১৪১৭</td></tr>
+<tr data-search="মোঃ বাবলু বিলমাড়িয়া ০১৭৮০-১৫২৮১৫ bablu ১৫"><td>১৫</td><td>মোঃ বাবলু</td><td>বিলমাড়িয়া</td><td>০১৭৮০-১৫২৮১৫</td></tr>
+<tr data-search="মোঃ রকি কোওড়াজোওড়া ০১৭২৬-৪৮৭০৪৯ roki ১৬"><td>১৬</td><td>মোঃ রকি</td><td>কোওড়াজোওড়া</td><td>০১৭২৬-৪৮৭০৪৯</td></tr>
+<tr data-search="মোঃ আকাশ চন্দনমাড়িয়া ০১৬২৫-৬৮০৪০১ akash ১৭"><td>১৭</td><td>মোঃ আকাশ</td><td>চন্দনমাড়িয়া</td><td>০১৬২৫-৬৮০৪০১</td></tr>
+<tr data-search="শ্রী সুমন চন্দ্র যগোপাড়া ০১৭৫০-৪৪১৬১২ sumon chandra ১৮"><td>১৮</td><td>শ্রী সুমন চন্দ্র</td><td>যগোপাড়া</td><td>০১৭৫০-৪৪১৬১২</td></tr>
+<tr data-search="মোঃ নাননু হাড়েগাথী ০১৭৪৫-৭২২৯১৫ nannu ১৯"><td>১৯</td><td>মোঃ নাননু</td><td>হাড়েগাথী</td><td>০১৭৪৫-৭২২৯১৫</td></tr>
+<tr data-search="মোঃ সাদ্দাম সাতবাড়িয়া ০১৬২১-৮৫২৩৩১ saddam ২০"><td>২০</td><td>মোঃ সাদ্দাম</td><td>সাতবাড়িয়া</td><td>০১৬২১-৮৫২৩৩১</td></tr>
+<tr data-search="মোঃ ছাবের খামারমাড়িয়া ০১৭৭০-৮২৩৫৯৬ saber ২১"><td>২১</td><td>মোঃ ছাবের</td><td>খামারমাড়িয়া</td><td>০১৭৭০-৮২৩৫৯৬</td></tr>
+<tr data-search="মোঃ নাইম বিলমাড়িয়া ০১৭৭৫-৩১০০৩২ naim ২২"><td>২২</td><td>মোঃ নাইম</td><td>বিলমাড়িয়া</td><td>০১৭৭৫-৩১০০৩২</td></tr>
+<tr data-search="মোঃ আকরাম জগোপাড়া ০১৭৪০-০৪২৬২৪ akram ২৩"><td>২৩</td><td>মোঃ আকরাম</td><td>জগোপাড়া</td><td>০১৭৪০-০৪২৬২৪</td></tr>
+<tr data-search="মোঃ রমজান সাতবাড়িয়া ০১৭৬৪-৬৪৪৬৩৭ ramjan ২৪"><td>২৪</td><td>মোঃ রমজান</td><td>সাতবাড়িয়া</td><td>০১৭৬৪-৬৪৪৬৩৭</td></tr>
+<tr data-search="মোঃ রাসেল মোল্লাপাড়া (পাবনা) ০১৭২১-৫৯২২৮৮ rasel ২৫"><td>২৫</td><td>মোঃ রাসেল</td><td>মোল্লাপাড়া (পাবনা)</td><td>০১৭২১-৫৯২২৮৮</td></tr>
+<tr data-search="মোঃ শরিফুল ইসলাম চন্দনমাড়িয়া ০১৭৩৭-৬১৬৮৪৫ shariful islam ২৬"><td>২৬</td><td>মোঃ শরিফুল ইসলাম</td><td>চন্দনমাড়িয়া</td><td>০১৭৩৭-৬১৬৮৪৫</td></tr>
+<tr data-search="মোঃ আশিফুল হাড়েগাথী ০১৭৯৭-৫৯০৮৫৯ ashiful ২৭"><td>২৭</td><td>মোঃ আশিফুল</td><td>হাড়েগাথী</td><td>০১৭৯৭-৫৯০৮৫৯</td></tr>
+<tr data-search="মোঃ মিলন হাড়েগাথী ০১৩১৩-৫৯৮৩৪৪ milon ২৮"><td>২৮</td><td>মোঃ মিলন</td><td>হাড়েগাথী</td><td>০১৩১৩-৫৯৮৩৪৪</td></tr>
+<tr data-search="মোঃ আনোয়ার বিলমাড়িয়া ০১৭৫০-৮৯৪৯০৯ anwar ২৯"><td>২৯</td><td>মোঃ আনোয়ার</td><td>বিলমাড়িয়া</td><td>০১৭৫০-৮৯৪৯০৯</td></tr>
+<tr data-search="মোঃ মামুন সুবর্ণপাড়া ০১৬০৪-৩০৬৩৪৭ mamun ৩০"><td>৩০</td><td>মোঃ মামুন</td><td>সুবর্ণপাড়া</td><td>০১৬০৪-৩০৬৩৪৭</td></tr>
+<tr data-search="মোঃ মিজানুর রহমান সাতবাড়িয়া (বরিশাল) ০১৭৬৪-৪৩৭২৯৩ mizanur rahman ৩১"><td>৩১</td><td>মোঃ মিজানুর রহমান</td><td>সাতবাড়িয়া (বরিশাল)</td><td>০১৭৬৪-৪৩৭২৯৩</td></tr>
+<tr data-search="মোঃ বাবুল ২ হাড়েগাথী ০১৮২০-০৫৯০৭৩ babul ৩২"><td>৩২</td><td>মোঃ বাবুল ২</td><td>হাড়েগাথী</td><td>০১৮২০-০৫৯০৭৩</td></tr>
+<tr data-search="মোঃ শাকিল হাড়েগাথী ০১৭৫০-৬৩৮৯৬১ shakil ৩৩"><td>৩৩</td><td>মোঃ শাকিল</td><td>হাড়েগাথী</td><td>০১৭৫০-৬৩৮৯৬১</td></tr>
+<tr data-search="মোঃ আব্দুল সালাম যগোপাড়া ০১৭৮২৫৫৬৫৬২ abdul salam ৩৪"><td>৩৪</td><td>মোঃ আব্দুল সালাম</td><td>যগোপাড়া</td><td>০১৭৮২৫৫৬৫৬২</td></tr>
+  </table>
+  </div>
+  <p class="small" style="margin-top:8px">মোট সদস্য: ৩৪ জন</p>
+</section>
+
+<section id="notice">
+  <h2 class="title">সর্বশেষ নোটিশ</h2>
+  <div class="notice">
+    <h3>জরুরি সভা</h3>
+    <p>নাটোর থেকে বাসুপাড়া রাস্তার ইজিবাইকের ভাড়া বৃদ্ধি প্রসঙ্গে সভা অনুষ্ঠিত হবে।</p>
+    <p><b>স্থান:</b> মোল্লাপাড়া বাজার, সাতবাড়িয়া, পুঠিয়া, রাজশাহী</p>
+    <p><b>সময়:</b> সন্ধ্যা ৭.০০–৮.০০</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="title">যোগাযোগ</h2>
+  <div class="cards">
+    <div class="card"><h3>ঠিকানা</h3><p>মোল্লাপাড়া বাজার, সাতবাড়িয়া, পুঠিয়া, রাজশাহী</p></div>
+    <div class="card"><h3>সমিতি</h3><p>মোল্লাপাড়া অটো ইজি বাইক সমিতি</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>© ২০২৬ মোল্লাপাড়া অটো ইজি বাইক সমিতি</p>
+  <p class="small">ঐক্য • নিরাপত্তা • সমৃদ্ধি</p>
+  <p class="small">ওয়েবসাইট তৈরি ও পরিচালনা: মোঃ সুজন</p>
+</footer>
+
+<script>
+(function(){
+  const input = document.getElementById('memberSearch');
+  const rows = Array.from(document.querySelectorAll('#members table tr[data-search]'));
+  const result = document.getElementById('searchResult');
+  const noResult = document.getElementById('noResult');
+
+  function normalize(s){
+    return (s || '')
+      .toLowerCase()
+      .replace(/[.,\-()]/g,' ')
+      .replace(/\s+/g,' ')
+      .trim();
+  }
+
+  function search(){
+    const q = normalize(input.value);
+    let shown = 0;
+
+    rows.forEach(row => {
+      const text = normalize(row.getAttribute('data-search'));
+      const visible = !q || text.includes(q);
+      row.style.display = visible ? '' : 'none';
+      if (visible) shown++;
+    });
+
+    noResult.style.display = (q && shown === 0) ? 'block' : 'none';
+    result.textContent = q
+      ? shown + ' জন সদস্যের তথ্য পাওয়া গেছে'
+      : 'সব ৩৪ জন সদস্য দেখানো হচ্ছে';
+  }
+
+  input.addEventListener('input', search);
+})();
+</script>
+
+</body>
+</html>
